@@ -10,14 +10,17 @@
 #aligned(
 
   // First
-  { cmd.bars.double-bold-open()
+  { 
+    cmd.time.tempo("Adagio", bpm: 60)
+    cmd.bars.double-bold-open()
     cmd.common.trebble()
     cmd.common.key-signature(pitch: -4)
     cmd.space(1fr)
     cmd.time.signature("4", "4")
   },
 
-  { cmd.bars.double-bold-open()
+  { 
+    cmd.bars.double-bold-open()
     cmd.common.bass()
     cmd.common.key-signature(pitch:2)
     cmd.space(1fr)
@@ -35,15 +38,5 @@
     cmd.bars.single()
     cmd.space(0.3em)
   }, 
-
-  {
-    cmd.space(1fr)
-    cmd.bars.double-bold-close()
-  },
-
-  {
-    cmd.space(364.8pt)
-    cmd.bars.double-bold-close()
-  },
 
 )
