@@ -40,9 +40,30 @@
   )
 }
 
-#let stretch-symbol(dx: 0em, dy: -0.4em, ..args) = {
+#let stretch-symbol(
+  body,
+
+  // Move
+  dx: 0pt, dy: 0pt,
+
+  // scale
+  sx: auto, sy: auto,
+
+  // rotate
+  angle: 0rad,
+  origin: left+horizon
+) = {
   return basic-content(
     dx: dx, dy: dy,
-    place(scale(..args))
+    place(
+      scale(
+        ..(if ( sx != auto) { (x: sx,) }), 
+        ..(if ( sy != auto) { (y: sy,) }),
+        origin: origin,
+        rotate(
+          angle, origin: origin, body
+        )
+      )
+    )
   )
 }

@@ -33,6 +33,7 @@
   ("crescendo", "𝆒"),
   ("decrescendo", "𝆓"),
   ("tie", "⁀"),
+  //("tie", sym.paren.t),
 
   ("pedal", "𝆮"),
   ("pedal.release", "𝆯"),

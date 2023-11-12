@@ -52,16 +52,18 @@
 }
 
 #let group(content) = {
+  set text(font: "Noto Music", size: 20pt)
   style( (styles) => {
     let size = measure(content, styles)
-    content
-    place(
-      move(
-        dy: -size.height / 2, dx: -0.2em,
-        scale(
-          y: ((size.height.pt() * 1pt) / 20pt) * 100%, 
-          x: ((size.height.pt() * 1pt) / 20pt) * 25%, 
-          origin: left+horizon, symbols.brace
+    block(
+      content +
+      place(
+        move(
+          dy: -size.height * 75%, dx: -0.35em,
+          scale(
+            y: ((size.height.pt() * 1pt) / 20pt) * 100%, 
+            origin: left+top, symbols.brace
+          )
         )
       )
     )
@@ -71,6 +73,7 @@
 #let aligned(staves: 2, v-space: 1em, ctx: (:), ..content) = {
 
   assert( calc.rem(content.pos().len(), staves) == 0 )
+  
   set text(font: "Noto Music", size: 20pt)
 
   style( styles => {
@@ -97,6 +100,7 @@
       }
     }
 
+    
     group(
       render.map(
         (it) => {
