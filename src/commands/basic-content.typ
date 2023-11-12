@@ -40,13 +40,6 @@
   )
 }
 
-#let basic-bezier(dx: 0pt, dy: 0pt, ..args) = {
-  return  basic-content(
-    dx: dx, dy: dy,
-    place( path(.. args) )
-  )
-}
-
 #let stretch-symbol(dx: 0em, dy: -0.4em, ..args) = {
   return basic-content(
     dx: dx, dy: dy,

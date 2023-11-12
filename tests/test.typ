@@ -16,6 +16,8 @@
     cmd.common.trebble()
     cmd.common.key-signature(pitch: -4)
 
+    cmd.time.signature("4", "4")
+
     cmd.space(0.3em)
     cmd.bars.single()
     cmd.space(0.3em)

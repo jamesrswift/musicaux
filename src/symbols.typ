@@ -21,6 +21,8 @@
 
   ("time", "𝄴"),
   ("time.common", "𝄴"),
+  ("time.cut", "𝄵"),
+  ("time.number.two", ""),
 
   ("note", "𝅗"),
   ("note.semibreve", "𝅗"),
