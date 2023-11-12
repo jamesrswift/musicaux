@@ -28,5 +28,13 @@
   ("note.crotchet", "𝅘𝅥"),
   ("note.quaver", "𝅘𝅥𝅮"),
   
-  ("crescendo", "𝆒")
+  ("crescendo", "𝆒"),
+  ("decrescendo", "𝆓"),
+  ("tie", "⁀"),
+
+  ("pedal", "𝆮"),
+  ("pedal.release", "𝆯"),
+
+  ("brace", "𝄔"),
+  ("bracket", "𝄕")
 )

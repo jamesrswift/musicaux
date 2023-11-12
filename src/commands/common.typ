@@ -4,6 +4,7 @@
 // Clefs
 // TO DO: Move to separate service that handles tune's key
 #let trebble = basic-content.with(pitch: 3, symbols.clef)
+#let bass = basic-content.with(pitch: 3, symbols.bass)
 
 // Key Signature
 // TO DO: Move to separate service that handles tune's key
